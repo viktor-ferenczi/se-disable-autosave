@@ -41,5 +41,6 @@ on Windows) and a Space Engineers install.
 dotnet build
 ```
 
-The `DeployPlugin` target copies the build output into Pulsar's `Local` plugin folder after
-every successful build.
+Load the working copy through a Pulsar development folder. Builds deploy into Pulsar's
+`Local` plugin folder only if `Pulsar` is set in `Directory.Build.props.user` or passed as
+`-p:Pulsar=...`.
